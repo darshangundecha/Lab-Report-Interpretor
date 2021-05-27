@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRI</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container d-flex flex-column flex-md-row">
+          <a class="nav-item" id="logo" href="/">Lab Report Interpretor</a>
+          <a class="nav-item" id="items" href="/Diabetes">Diabetes</a>
+          <a class="nav-item" id="items" href="/CardiacArrest">Cardiac Arrest</a>
+          <a class="nav-item" id="items" href="/LiverDisease">Liver Disease</a>
+        </div>
+      </nav>
+      <div class="heading">
+            <p>Diabetes</p>
+    </div>
+      <div class="form-div">
+      <form class="form1" action="/Predict" method="POST">
+        <label for="A">No. of Pregnancies:   </label>
+        <input type="number" id="A" name="A" required><br>
+        <label for="B">Glucose:  </label>
+        <input type="number" id="B" name="B" required><br>
+        <label for="C">Blood Pressure: </label>
+        <input type="number" id="C" name="C" required><br>
+        <label for="D">Skin Thickness: </label>
+        <input type="number" id="D" name="D" required><br>
+        <label for="E">Insulin:       </label>
+        <input type="number" id="E" name="E" required><br>
+        <label for="F">BMI:           </label>
+        <input type="number" id="F" name="F" required><br>
+        <label for="G">DPF:           </label>
+        <input type="number" id="G" name="G" required><br>
+        <label for="H">Age:           </label>
+        <input type="number" id="H" name="H" required><br><br>
+        <input type="submit" id="predict" value="Predict!">
+        
+      </form>
+      </div>>
+
+    
+</body>
+</html>
