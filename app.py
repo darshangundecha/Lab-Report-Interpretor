@@ -2,9 +2,9 @@ import pickle
 import numpy as np
 import pandas as pd
 
-path1='C:\\Git Repos\\Wellness-Application-1\\Models\\prediction-model-diabetes.pkl'
-path2='C:\\Git Repos\\Wellness-Application-1\\Models\\prediction-model-heart-attack.pkl'
-path3='C:\\Git Repos\\Wellness-Application-1\\Models\\prediction-model-liver-disease.pkl'
+path1='C:\\Git Repos\\Lab-Report-Interpretor\\Models\\prediction-model-diabetes.pkl'
+path2='C:\\Git Repos\\Lab-Report-Interpretor\\Models\\prediction-model-heart-attack.pkl'
+path3='C:\\Git Repos\\Lab-Report-Interpretor\\Models\\prediction-model-liver-disease.pkl'
 
 classifier = pickle.load(open(path1, 'rb'))
 classifier1 = pickle.load(open(path2, 'rb'))

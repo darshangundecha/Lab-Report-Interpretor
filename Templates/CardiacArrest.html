@@ -1,62 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LRI</title>
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  </head>
-<body>
-    <nav class="navbar">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <a class="nav-item" id="logo" href="/">Lab Report Interpretor</a>
-          <a class="nav-item" id="items" href="/Diabetes">Diabetes</a>
-          <a class="nav-item" id="items" href="/CardiacArrest">Cardiac Arrest</a>
-          <a class="nav-item" id="items" href="/LiverDisease">Liver Disease</a>
-        </div>
-      </nav>
-      <div class="heading">
-        <p>Cardiac Arrest</p>
+{% extends "base.html"%}
+{%block content%}
+<div class="heading">
+  <p>Cardiac Arrest</p>
 </div>
-      <div class="form-div">
-      <form class="form1" action="/Predict1" method="POST">
-        <label for="A">Age:</label>
-        <input type="number" step="any" id="A" name="A" required><br>
-        <label for="B">Sex:</label>
-        <input type="number" step="any" id="B" name="B" required><br>
-        <label for="C">cp:</label>
-        <input type="number" step="any" id="C" name="C" required><br>
-        <label for="D">trtbps:</label>
-        <input type="number" step="any" id="D" name="D" required><br>
-        <label for="E">chol:</label>
-        <input type="number" step="any" id="E" name="E" required><br>
-        <label for="F">fbs:</label>
-        <input type="number" step="any" id="F" name="F" required><br>
-        <label for="G">restecg:</label>
-        <input type="number" step="any" id="G" name="G" required><br>
-        <label for="H">thalachh:</label>
-        <input type="number" step="any" id="H" name="H" required><br>
-        <label for="I">exng:</label>
-        <input type="number" step="any" id="I" name="I" required><br>
-        <label for="J">oldpeak:</label>
-        <input type="number" step="any" id="J" name="J" required><br>
-        <label for="K">slp:</label>
-        <input type="number" step="any" id="K" name="K" required><br>
-        <label for="L">caa:</label>
-        <input type="number" step="any" id="L" name="L" required><br>
-        <label for="M">thall:</label>
-        <input type="number" step="any" id="M" name="M" required><br><br>
-        <input type="submit" id="predict" value="Predict!">
-        
-      </form>
-      </div>
-    
+<div class="form-div">
+  <form class="form1" action="/Predict1" method="POST">
+    <label for="A">Age:</label>
+    <input type="number" step="any" id="A" name="A" required><br>
+    <label for="B">Sex:</label>
+    <input type="number" step="any" id="B" name="B" required><br>
+    <label for="C">cp:</label>
+    <input type="number" step="any" id="C" name="C" required><br>
+    <label for="D">trtbps:</label>
+    <input type="number" step="any" id="D" name="D" required><br>
+    <label for="E">chol:</label>
+    <input type="number" step="any" id="E" name="E" required><br>
+    <label for="F">fbs:</label>
+    <input type="number" step="any" id="F" name="F" required><br>
+    <label for="G">restecg:</label>
+    <input type="number" step="any" id="G" name="G" required><br>
+    <label for="H">thalachh:</label>
+    <input type="number" step="any" id="H" name="H" required><br>
+    <label for="I">exng:</label>
+    <input type="number" step="any" id="I" name="I" required><br>
+    <label for="J">oldpeak:</label>
+    <input type="number" step="any" id="J" name="J" required><br>
+    <label for="K">slp:</label>
+    <input type="number" step="any" id="K" name="K" required><br>
+    <label for="L">caa:</label>
+    <input type="number" step="any" id="L" name="L" required><br>
+    <label for="M">thall:</label>
+    <input type="number" step="any" id="M" name="M" required><br><br>
+    <input type="submit" id="predict" value="Predict!">
 
-    
-</body>
-</html>
+  </form>
+</div>
+{%endblock%}
